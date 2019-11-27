@@ -1,0 +1,10 @@
+Changes
+Makefile.PL
+MANIFEST
+LICENSE
+README
+README.md
+XS.xs
+t/create_thumbnail.t
+t/src.png
+lib/Ithumb/XS.pm

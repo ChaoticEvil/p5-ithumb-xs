@@ -1,6 +1,6 @@
 Revision history for Perl extension Ithumb::XS.
 
-v0.3.0 Wed Nov 27 16:21:36 MSK 2019
+v0.3.0 Fri Nov 29 10:51:12 MSK 2019
 	- Add new tests
 	- Improve conversion algorithm
     - Rename method (create_thumbnail -> convert_image)

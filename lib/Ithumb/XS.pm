@@ -4,7 +4,7 @@ package Ithumb::XS;
 
 =head1 NAME
 
-Ithumb::XS - image thumbnail creation routines
+Ithumb::XS - Image thumbnail creation routines
 
 =head1 DESCRIPTION
 

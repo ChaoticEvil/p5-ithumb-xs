@@ -4,9 +4,11 @@
 /META.json
 /MYMETA.*
 *.o
-*.c
 *.pm.tdy
 *.bs
+*.jpg
+*.png
+*.pl
 
 # Devel::Cover
 cover_db/
@@ -36,3 +38,4 @@ inc/
 /*.zip
 
 .DS_Store
+XS.c

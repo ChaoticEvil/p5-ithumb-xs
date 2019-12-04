@@ -1,5 +1,8 @@
 Revision history for Perl extension Ithumb::XS.
 
+v0.5.0 Wed Dec 4 09:00:56 MSK 2019
+	-
+
 v0.4.0 Wed Dec 4 08:47:26 MSK 2019
 	- Thumbnail algorithm moved to the library and separated from XS
 

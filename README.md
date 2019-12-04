@@ -39,20 +39,6 @@ Ithumb::XS::convert_image({
 });
 ```
 
-OO-interface:
-
-```perl
-use Ithumb::XS;
-
-my $ithumb = Ithumb::XS->new;
-$ithumb->convert({
-    width     => 800,
-    height    => 600,
-    src_image => 'src_image.jpg',
-    dst_image => 'dst_result_image.jpg'
-});
-```
-
 ## CopyRight and license
 
 Copyright (C) 2018, 2019 by Peter P. Neuromantic <p.brovchenko@protonmail.com>.

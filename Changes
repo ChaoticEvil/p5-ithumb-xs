@@ -1,6 +1,7 @@
 Revision history for Perl extension Ithumb::XS.
 
 v0.5.0 Wed Dec 4 09:00:56 MSK 2019
+	- Remove redundant OO-interface
 	-
 
 v0.4.0 Wed Dec 4 08:47:26 MSK 2019
@@ -16,7 +17,7 @@ v0.2.1 Sun Feb 17 10:33:08 MSK 2019
 
 v0.2.0 Sun Feb 17 01:13:01 MSK 2019
 	- Rewrite XS-code (params of thumbnail as hashref and better validation)
-	- Add OOP-interface: convert
+	- Add OO-interface: convert
 	- Fixed tests
 	- Fixed pod-doc ad readme
 

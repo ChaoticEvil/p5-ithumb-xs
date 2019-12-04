@@ -6,7 +6,7 @@ v0.4.0 Wed Dec 4 08:47:26 MSK 2019
 v0.3.0 Fri Nov 29 10:51:12 MSK 2019
 	- Add new tests
 	- Improve conversion algorithm
-    - Rename method (create_thumbnail -> convert_image)
+	- Rename method (create_thumbnail -> convert_image)
 
 v0.2.1 Sun Feb 17 10:33:08 MSK 2019
 	- Fixed pod-docs

@@ -27,7 +27,7 @@ our @ISA = qw(Exporter);
 
 our @EXPORT_OK = qw( convert_image );
 
-our $VERSION = 'v0.3.0';
+our $VERSION = 'v0.4.0';
 
 require XSLoader;
 XSLoader::load('Ithumb::XS', $VERSION);

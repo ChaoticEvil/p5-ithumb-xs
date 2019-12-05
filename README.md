@@ -43,7 +43,7 @@ $ cpan -i Ithumb::XS
 
 ```
 $ perl -MIthumb::XS -e \
-    "convert_image({width => 800, height => 600, src_image => 1.jpg', dst_image => '2.jpg'})"
+    "Ithumb::XS::convert_image({width => 800, height => 600, src_image => '1.jpg', dst_image => '2.jpg'})"
 ```
 
 ### From perl code

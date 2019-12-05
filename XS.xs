@@ -3,7 +3,7 @@
 #include "perl.h"
 #include "XSUB.h"
 
-#include "ithumb.c"
+#include "ithumb/ithumb.c"
 
 
 MODULE = Ithumb::XS		PACKAGE = Ithumb::XS

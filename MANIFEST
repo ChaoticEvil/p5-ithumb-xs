@@ -1,6 +1,8 @@
 Changes
 LICENSE
 MANIFEST
+MYMETA.yml
+MYMETA.json
 Makefile.PL
 README
 README.md

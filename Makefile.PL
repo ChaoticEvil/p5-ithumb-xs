@@ -11,5 +11,20 @@ WriteMakefile(
     LICENSE           => 'bsd',
     LIBS              => ['-lImlib2'],
     DEFINE            => '',
-    INC               => '-I/usr/include -I/usr/X11/include/'
+    INC               => '-I/usr/include -I/usr/X11/include/',
+    META_MERGE        => {
+        'meta-spec' => {
+            version => 2
+        },
+        resources   => {
+            bugtracker => {
+                web => 'https://github.com/ChaoticEvil/p5-ithumb-xs/issues'
+            },
+            repository => {
+                type => 'git',
+                url  => 'https://github.com/ChaoticEvil/p5-ithumb-xs.git',
+                web  => 'https://github.com/ChaoticEvil/p5-ithumb-xs',
+            },
+        },
+    },
 );

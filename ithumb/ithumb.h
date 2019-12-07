@@ -1,24 +1,34 @@
-enum IthumErrors {
-    ITHUMB_REQUESTED_WIDTH_ERROR  = 101,
-    ITHUMB_REQUESTED_HEIGHT_ERROR = 102,
-    ITHUMB_REQUESTED_SRC_ERROR    = 103,
-    ITHUMB_REQUESTED_DST_ERROR    = 104,
-    ITHUMB_SCALE_FAILED_ERROR     = 105,
-    ITHUMB_CROP_FAILED_ERROR      = 106
+/*
+ */
+enum IthumbErrors {
+    ITHUMB_WIDTH_ERROR    = 0b1100101,
+    ITHUMB_HEIGHT_ERROR   = 0b1100110,
+    ITHUMB_SRC_ERROR      = 0b1100111,
+    ITHUMB_DST_ERROR      = 0b1101000,
+    ITHUMB_SCALING_ERROR  = 0b1101001,
+    ITHUMB_CROPPING_ERROR = 0b1101010
 };
 
-typedef struct img_t {
+/*
+ */
+typedef struct image_t {
     int w;
     int h;
     char *src;
     char *dst;
-} Img;
+} Image;
 
-typedef struct err_t {
+/*
+ */
+typedef struct error_t {
     unsigned short int code;
     char *msg;
-} IErr;
+} IError;
 
-int resize_and_crop(Img *image);
+/*
+ */
+int resize_and_crop(Image *image);
 
-IErr get_error(int imlib_error_code);
+/*
+ */
+IError get_error(int err_code);

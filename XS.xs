@@ -40,13 +40,13 @@ convert_image(SV *thumb_params)
         svp = hv_fetch(h_thumb_params, "dst_image", 9, 0);
         dst_path = SvPV(*svp, keylen);
 
-        Img image = { (int)width, (int)height, src_path, dst_path };
+        Image image = { (int)width, (int)height, src_path, dst_path };
 
         int convert_result = resize_and_crop(&image);
 
         if (convert_result) {
-            IErr err = get_error(convert_result);
-            Perl_croak(aTHX_ "%s", err.msg);
+            IError error = get_error(convert_result);
+            Perl_croak(aTHX_ "%s", error.msg);
         }
 
         RETVAL = 1;

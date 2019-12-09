@@ -10,7 +10,7 @@ MODULE = Ithumb::XS		PACKAGE = Ithumb::XS
 PROTOTYPES: ENABLE
 
 int
-convert_image(SV *thumb_params)
+create_thumbnail(SV *thumb_params)
 	CODE:
         SV **svp;
         unsigned long keylen;

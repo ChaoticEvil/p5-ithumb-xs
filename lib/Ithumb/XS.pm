@@ -35,7 +35,7 @@ Peter P. Neuromantic <p.brovchenko@protonmail.com>
 
   use Ithumb::XS ();
 
-  Ithumb::XS::convert_image({
+  Ithumb::XS::create_thumbnail({
       width     => 800,
       height    => 600,
       src_image => 'src_image.jpg',
@@ -44,7 +44,7 @@ Peter P. Neuromantic <p.brovchenko@protonmail.com>
 
 =head1 FUNCTIONS
 
-=head2 convert_image($)
+=head2 create_thumbnail($)
 
 Creates a small copy (resizing and cropping) of the image.
 

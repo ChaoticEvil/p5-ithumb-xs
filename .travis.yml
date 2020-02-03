@@ -14,11 +14,11 @@ install:
     - cpanm -v --installdeps --notest .
 
 script:
-  - PERL5OPT=-MDevel::Cover=-coverage,statement,branch,condition,path,subroutine prove -lrsv t
   - perl Makefile.PL
   - make
   - make install
   - make test
+  - PERL5OPT=-MDevel::Cover=-coverage,statement,branch,condition,path,subroutine prove -lrsv t
   - cover
 
 after_success:

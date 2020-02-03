@@ -4,14 +4,19 @@ use strict;
 use warnings;
 
 use Test::More 'no_plan';
-BEGIN { use_ok('Ithumb::XS') };
+use Test::Pod::Coverage;
 
+
+BEGIN {
+    use_ok('Ithumb::XS');
+    pod_coverage_ok('Ithumb::XS', 'Ithumb::XS is covered');
+};
+
+can_ok('Ithumb::XS', 'create_thumbnail');
 
 # Source image have dimension 5x3 px.
 use constant SRC => 't/src.png';
 use constant DST => 't/src_thumb.png';
-
-can_ok('Ithumb::XS', 'create_thumbnail');
 
 eval {
     Ithumb::XS::create_thumbnail({width => -2, height => 2, src => SRC, dst => DST});

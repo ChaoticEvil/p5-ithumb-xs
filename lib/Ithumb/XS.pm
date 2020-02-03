@@ -36,10 +36,10 @@ Peter P. Neuromantic <p.brovchenko@protonmail.com>
   use Ithumb::XS ();
 
   Ithumb::XS::create_thumbnail({
-      width     => 800,
-      height    => 600,
-      src_image => 'src_image.jpg',
-      dst_image => 'dst_image.jpg'
+      width  => 800,
+      height => 600,
+      src    => 'src_image.jpg',
+      dst    => 'dst_image.jpg'
   });
 
 =head1 FUNCTIONS
@@ -50,13 +50,13 @@ Creates a small copy (resizing and cropping) of the image.
 
 =over 20
 
-=item $_[0]->{width} - destination width
+=item $_[0]->{width}  - destination width
 
 =item $_[0]->{height} - destination height
 
-=item $_[0]->{src_image} - path to the source image
+=item $_[0]->{src}    - path to the source image
 
-=item $_[0]->{dst_image} - path to the destionation result image
+=item $_[0]->{dst}    - path to the destionation result image
 
 =back
 

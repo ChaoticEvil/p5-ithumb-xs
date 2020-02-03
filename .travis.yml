@@ -1,0 +1,27 @@
+language: "perl"
+perl:
+  - "5.30"
+  - "5.28"
+  - "5.26"
+  - "5.24"
+
+before_install:
+    - sudo apt-get update -q
+    - sudo apt-get install -y libimlib2-dev
+    - cpanm Test::Pod Test::Pod::Coverage
+
+install:
+    - cpanm -v --installdeps --notest .
+
+script: "perl Makefile.PL && make && make test"
+
+branches:
+  only:
+    - master
+
+notifications:
+  recipients:
+    - "p.brovchenko@protonmail.com"
+  email:
+    on_success: change
+    on_failure: always

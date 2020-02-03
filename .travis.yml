@@ -8,12 +8,20 @@ perl:
 before_install:
     - sudo apt-get update -q
     - sudo apt-get install -y libimlib2-dev
-    - cpanm Test::Pod Test::Pod::Coverage
+    - cpanm --quiet --notest Test::Pod Test::Pod::Coverage Devel::Cover::Report::Coveralls
 
 install:
     - cpanm -v --installdeps --notest .
 
-script: "perl Makefile.PL && make && make test"
+script:
+  - PERL5OPT=-MDevel::Cover=-coverage,statement,branch,condition,path,subroutine prove -lrsv t
+  - perl Makefile.PL
+  - make
+  - make test
+  - cover
+
+after_success:
+    - cover -report coveralls
 
 branches:
   only:

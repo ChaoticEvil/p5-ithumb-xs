@@ -66,7 +66,7 @@ Ithumb::XS::create_thumbnail({
 
 BSD 3-Clause License
 
-Copyright (c) 2018-2020 Peter P. Neuromantic \<p.brovchenko@protonmail.com\>
+Copyright (c) 2018-2020 Peter P. Neuromantic \<p.brovchenko@protonmail.com\>.\
 All rights reserved.
 
 See LICENSE file for more information.

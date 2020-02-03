@@ -17,8 +17,8 @@ script:
   - PERL5OPT=-MDevel::Cover=-coverage,statement,branch,condition,path,subroutine prove -lrsv t
   - perl Makefile.PL
   - make
-  - make test
   - make install
+  - make test
   - cover
 
 after_success:

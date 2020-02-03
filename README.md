@@ -1,5 +1,7 @@
 # Ithumb::XS
 
+[![Build Status](https://travis-ci.com/ChaoticEvil/p5-ithumb-xs.svg?branch=master)](https://travis-ci.com/ChaoticEvil/p5-ithumb-xs)
+
 Ithumb::XS - is a small (one function), simple and fast Perl-XS module
 for creation a thumbnails (with resizing and cropping), using Imlib2 library.
 

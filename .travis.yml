@@ -6,12 +6,12 @@ perl:
   - "5.24"
 
 before_install:
-    - sudo apt-get update -q
-    - sudo apt-get install -y libimlib2-dev
-    - cpanm --quiet --notest Test::Pod Test::Pod::Coverage Devel::Cover::Report::Coveralls
+  - sudo apt-get update -q
+  - sudo apt-get install -y libimlib2-dev
+  - cpanm --quiet --notest Test::Pod::Coverage Devel::Cover::Report::Coveralls
 
 install:
-    - cpanm -v --installdeps --notest .
+  - cpanm -v --installdeps --notest .
 
 script:
   - perl Makefile.PL
@@ -22,7 +22,7 @@ script:
   - cover
 
 after_success:
-    - cover -report coveralls
+  - cover -report coveralls
 
 branches:
   only:

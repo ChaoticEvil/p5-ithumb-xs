@@ -1,50 +1,53 @@
 Revision history for Perl extension Ithumb::XS.
 
-v0.5.0
-	- Remove redundant OO-interface
-	- Revert method name convert_image -> create_thumbnail
-    - Improve README
-    - Improve pod docs
-    - Wrap save-fucntion into more safely *with_error_return-fucntion
-    - Small refactoring into XS and C code
+v0.5.0 Tue Feb  4 07:48:40 MSK 2020
     - Add .travis.yml for CI over github
+    - Add badges icons: build, coverage and cpan package version
+    - Add cpanfile (for test pod coverage on 'make test')
+    - Remove redundant OO-interface
+    - Revert method name convert_image -> create_thumbnail
+    - Actualize README* and pod docs
+    - Wrap save-fucntion into more safely *with_error_return-fucntion
+    - C and XS code changes:
+      small refactoring;
+      add func-wrapper for more safely saving result image;
 
 v0.4.0 Wed Dec 4 08:47:26 MSK 2019
-	- Thumbnail algorithm moved to the library and separated from XS
+    - Thumbnail algorithm moved to the library and separated from XS
 
 v0.3.0 Fri Nov 29 10:51:12 MSK 2019
-	- Add new tests
-	- Improve conversion algorithm
-	- Rename method (create_thumbnail -> convert_image)
+    - Add new tests
+    - Improve conversion algorithm
+    - Rename method (create_thumbnail -> convert_image)
 
 v0.2.1 Sun Feb 17 10:33:08 MSK 2019
-	- Fix pod-docs
+    - Fix pod-docs
 
 v0.2.0 Sun Feb 17 01:13:01 MSK 2019
-	- Rewrite XS-code (params of thumbnail as hashref and better validation)
-	- Add OO-interface: convert
-	- Fix tests
-	- Fix pod-doc ad readme
+    - Rewrite XS-code (params of thumbnail as hashref and better validation)
+    - Add OO-interface: convert
+    - Fix tests
+    - Fix pod-doc ad readme
 
 v0.1.5 Sat Dec 8 10:03:19 MSK 2018
-	- Fixed and improve readme's and pod-docs
+    - Fix and improve readme's and pod-docs
 
 v0.1.4.1 Thu Nov 22 11:00:00 MSK 2018
-	- Fix render validation error
-	- Fix module description
+    - Fix render validation error
+    - Fix module description
 
 v0.1.4 Thu Nov 22 10:00:00 MSK 2018
-	- Some XS improves (better input validation)
+    - Some XS improves (better input validation)
 
 v0.1.3 Tue Jul 3 11:30:00 MSK 2018
-	- Improve XS code
+    - Improve XS code
 
 v0.1.2 Wed Mar 14 08:00:00 MSK 2018
-	- Fix CPAN Kwalitee Issues
+    - Fix CPAN Kwalitee Issues
 
 v0.1.1 Sun Mar 11 18:34:53 MSK 2018
-	- Fix test, pod-docs and typo.
+    - Fix test, pod-docs and typo.
 
 v0.1.0 Sun Mar 11 12:00:00 MSK 2018
-	- The first release.
-	  Add basic functionality, create distribution and make cpan-package.
+    - The first release.
+      Add basic functionality, create distribution and make cpan-package.

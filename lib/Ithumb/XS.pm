@@ -64,7 +64,7 @@ Creates a small copy (resizing and cropping) of the image.
 
 BSD 3-Clause License
 
-Copyright (c) 2018-2020 Peter P. Neuromantic E<lt>p.brovchenko@protonmail.comE<gt>
+Copyright (c) 2018-2020 Peter P. Neuromantic E<lt>p.brovchenko@protonmail.comE<gt>.
 All rights reserved.
 
 See LICENSE file for more information.

@@ -115,12 +115,7 @@ IError get_error(int err_code) {
 int resize_and_crop(Image *image) {
     float aspect_ration_orig, aspect_ratio_new;
 
-    int width      = 0,
-        height     = 0,
-        crop_x     = 0,
-        crop_y     = 0,
-        new_width  = 0,
-        new_height = 0;
+    int width = 0, height = 0;
 
     Imlib_Image src_img, scaled_img, croped_img;
     Imlib_Load_Error imlib_error = IMLIB_LOAD_ERROR_NONE;

@@ -12,7 +12,7 @@ WriteMakefile(
     LIBS              => ['-lImlib2'],
     DEFINE            => '',
     INC               => '-I/usr/include -I/usr/X11/include/',
-    CCFLAGS           => '-Wall -Wextra',
+    CCFLAGS           => '-Wall -Wextra -Werror -std=c11',
     META_MERGE        => {
         'meta-spec' => {
             version => 2

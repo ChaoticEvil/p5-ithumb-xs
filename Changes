@@ -1,8 +1,10 @@
 Revision history for Perl extension Ithumb::XS.
 
-v0.5.1
+v0.5.1 Wed Feb  5 07:04:57 MSK 2020
     - Fixed unused variables in ithumb.c
-    - Added more strongify comiler CCFLAGS (-Wall -Wextra -Werror -std=c11)
+    - Fixed undeclared dependency Test::Pod::Coverage
+      https://github.com/ChaoticEvil/p5-ithumb-xs/issues/2#issue-559945803
+    - Added more strictly compiler flag (-Wall -Wextra -Werror -std=c11)
 
 v0.5.0 Tue Feb  4 07:48:40 MSK 2020
     - Added .travis.yml for CI over github

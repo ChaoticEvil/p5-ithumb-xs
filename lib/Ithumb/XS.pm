@@ -7,7 +7,7 @@ use warnings;
 use base 'Exporter';
 our @EXPORT_OK = qw(convert_image);
 
-our $VERSION = 'v0.5.0';
+our $VERSION = '0.5.1';
 
 require XSLoader;
 XSLoader::load('Ithumb::XS', $VERSION);

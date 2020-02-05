@@ -4,13 +4,9 @@ use strict;
 use warnings;
 
 use Test::More 'no_plan';
-use Test::Pod::Coverage;
 
 
-BEGIN {
-    use_ok('Ithumb::XS');
-    pod_coverage_ok('Ithumb::XS', 'Ithumb::XS is covered');
-};
+BEGIN { use_ok('Ithumb::XS'); };
 
 can_ok('Ithumb::XS', 'create_thumbnail');
 

@@ -1,12 +1,16 @@
 Revision history for Perl extension Ithumb::XS.
 
-v0.5.1 Wed Feb  5 07:04:57 MSK 2020
+v0.5.2 2020-02-27
+    - Fixed README*
+    - Fixed Cpants Kwalitee issues
+
+v0.5.1 2020-02-05
     - Fixed unused variables in ithumb.c
     - Fixed undeclared dependency Test::Pod::Coverage
       https://github.com/ChaoticEvil/p5-ithumb-xs/issues/2#issue-559945803
     - Added more strictly compiler flag (-Wall -Wextra -Werror -std=c11)
 
-v0.5.0 Tue Feb  4 07:48:40 MSK 2020
+v0.5.0 2020-02-04
     - Added .travis.yml for CI over github
     - Added badges icons: build, coverage and cpan package version
     - Added cpanfile (for test pod coverage on 'make test')
@@ -18,42 +22,42 @@ v0.5.0 Tue Feb  4 07:48:40 MSK 2020
       small refactoring;
       add func-wrapper for more safely saving result image;
 
-v0.4.0 Wed Dec 4 08:47:26 MSK 2019
+v0.4.0 2019-12-04
     - Thumbnail algorithm moved to the library and separated from XS
 
-v0.3.0 Fri Nov 29 10:51:12 MSK 2019
+v0.3.0 2019-11-29
     - Added new tests
     - Improved conversion algorithm
     - Renamed method (create_thumbnail -> convert_image)
 
-v0.2.1 Sun Feb 17 10:33:08 MSK 2019
+v0.2.1 2019-02-17
     - Fixed pod-docs
 
-v0.2.0 Sun Feb 17 01:13:01 MSK 2019
+v0.2.0 2019-02-17
     - Rewrote XS-code (params of thumbnail as hashref and better validation)
     - Added OO-interface: convert
     - Fixed tests
     - Fixed pod-doc ad readme
 
-v0.1.5 Sat Dec 8 10:03:19 MSK 2018
+v0.1.5 2018-12-08
     - Fixed and improve readme's and pod-docs
 
-v0.1.4.1 Thu Nov 22 11:00:00 MSK 2018
+v0.1.4.1 2018-11-22
     - Fixed render validation error
     - Fixed module description
 
-v0.1.4 Thu Nov 22 10:00:00 MSK 2018
+v0.1.4 2018-11-22
     - Some XS improves (better input validation)
 
-v0.1.3 Tue Jul 3 11:30:00 MSK 2018
+v0.1.3 2018-07-03
     - Improve XS code
 
-v0.1.2 Wed Mar 14 08:00:00 MSK 2018
+v0.1.2 2018-03-14
     - Fixed CPAN Kwalitee Issues
 
-v0.1.1 Sun Mar 11 18:34:53 MSK 2018
+v0.1.1 2018-03-11
     - Fixed test, pod-docs and typo.
 
-v0.1.0 Sun Mar 11 12:00:00 MSK 2018
+v0.1.0 2018-03-11
     - The first release.
       Added basic functionality, create distribution and make cpan-package.

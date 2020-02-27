@@ -47,7 +47,7 @@ $ cpan -i Ithumb::XS
 ### From shell (as one-liner)
 
 ```
-$ perl -MIthumb::XS -e \
+$ perl -mIthumb::XS -e \
     "Ithumb::XS::create_thumbnail({width => 800, height => 600, src => '1.jpg', dst => '2.jpg'})"
 ```
 

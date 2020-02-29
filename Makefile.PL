@@ -13,6 +13,7 @@ WriteMakefile(
     DEFINE            => '',
     INC               => '-I/usr/include -I/usr/X11/include/',
     CCFLAGS           => '-Wall -Wextra -Werror -std=c11',
+    OPTIMIZE          => '-O3',
     META_MERGE        => {
         'meta-spec' => {
             version => 2

@@ -7,13 +7,12 @@
 
 
 MODULE = Ithumb::XS		PACKAGE = Ithumb::XS
-PROTOTYPES: ENABLE
+PROTOTYPES: DISABLE
 
 int
 create_thumbnail(SV *params)
 	CODE:
         SV **svp;
-        unsigned long keylen;
         HV *h_params = (HV*) SvRV(params);
 
         if (!hv_exists(h_params, "width", 5))
@@ -38,10 +37,10 @@ create_thumbnail(SV *params)
         height = SvIV(*svp);
 
         svp = hv_fetch(h_params, "src", 3, 0);
-        src_path = SvPV(*svp, keylen);
+        src_path = SvPV_nolen(*svp);
 
         svp = hv_fetch(h_params, "dst", 3, 0);
-        dst_path = SvPV(*svp, keylen);
+        dst_path = SvPV_nolen(*svp);
 
         Image image = { (int)width, (int)height, src_path, dst_path };
 

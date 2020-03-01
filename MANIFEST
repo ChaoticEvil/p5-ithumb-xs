@@ -1,11 +1,8 @@
 Changes
 LICENSE
 MANIFEST
-MYMETA.yml
-MYMETA.json
 Makefile.PL
 README
-README.md
 XS.xs
 ithumb/ithumb.c
 ithumb/ithumb.h

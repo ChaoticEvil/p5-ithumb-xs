@@ -1,8 +1,14 @@
 Revision history for Perl extension Ithumb::XS.
 
-v0.5.2 2020-02-27
+v0.5.2 2020-03-01
     - Fixed README*
     - Fixed Cpants Kwalitee issues
+    - Fixed XS.xs
+      PROTOTYPES: DISABLE
+    - Fixed Makefile.PL
+      OPTIMIZE -O3
+    - Fixed XS getting input values from hashref
+      replace SvPV -> SvPV_nolen (suck less memory)
 
 v0.5.1 2020-02-05
     - Fixed unused variables in ithumb.c

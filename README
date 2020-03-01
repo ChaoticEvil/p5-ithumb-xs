@@ -36,14 +36,14 @@ USAGE
 
 From shell (as one-liner):
 
-  perl -mIthumb::XS -e \
-    "Ithumb::XS::create_thumbnail({width => 800, height => 600, src => '1.jpg', dst => '2.jpg'})"
+  perl -MIthumb::XS=create_thumbnail -e \
+    "create_thumbnail({width => 800, height => 600, src => '1.jpg', dst => '2.jpg'})"
 
 From perl code:
 
-  use Ithumb::XS ();
+  use Ithumb::XS 'create_thumbnail';
 
-  Ithumb::XS::create_thumbnail({
+  create_thumbnail({
       width  => 800,
       height => 600,
       src    => 'src_image.jpg',

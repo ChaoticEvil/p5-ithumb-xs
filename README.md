@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/ChaoticEvil/p5-ithumb-xs.svg?branch=master)](https://travis-ci.com/ChaoticEvil/p5-ithumb-xs)
 [![Coverage Status](https://coveralls.io/repos/github/ChaoticEvil/p5-ithumb-xs/badge.svg?branch=master)](https://coveralls.io/github/ChaoticEvil/p5-ithumb-xs?branch=master)
 [![CPAN version](https://badge.fury.io/pl/Ithumb-XS.svg)](https://badge.fury.io/pl/Ithumb-XS)
-[![Cpants Kwalitee](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-v0.5.0.svg)](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-v0.5.0)
+[![Cpants Kwalitee](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-v0.5.2.svg)](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-v0.5.0)
 
 Ithumb::XS - is a small (one function), simple and fast Perl-XS module
 for creation a thumbnails (with resizing and cropping), using Imlib2 library.
@@ -47,16 +47,16 @@ $ cpan -i Ithumb::XS
 ### From shell (as one-liner)
 
 ```
-$ perl -mIthumb::XS -e \
-    "Ithumb::XS::create_thumbnail({width => 800, height => 600, src => '1.jpg', dst => '2.jpg'})"
+$ perl -MIthumb::XS=create_thumbnail -e \
+    "create_thumbnail({width => 800, height => 600, src => '1.jpg', dst => '2.jpg'})"
 ```
 
 ### From perl code
 
 ```perl
-use Ithumb::XS ();
+use Ithumb::XS 'create_thumbnail';
 
-Ithumb::XS::create_thumbnail({
+create_thumbnail({
     width  => 800,
     height => 600,
     src    => 'src_image.jpg',

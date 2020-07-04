@@ -1,9 +1,9 @@
-# Ithumb::XS
+# Ithumb::XS (project is closed)
 
 [![Build Status](https://travis-ci.com/ChaoticEvil/p5-ithumb-xs.svg?branch=master)](https://travis-ci.com/ChaoticEvil/p5-ithumb-xs)
 [![Coverage Status](https://coveralls.io/repos/github/ChaoticEvil/p5-ithumb-xs/badge.svg?branch=master)](https://coveralls.io/github/ChaoticEvil/p5-ithumb-xs?branch=master)
 [![CPAN version](https://badge.fury.io/pl/Ithumb-XS.svg)](https://badge.fury.io/pl/Ithumb-XS)
-[![Cpants Kwalitee](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-0.5.2.svg)](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-0.5.2)
+[![Cpants Kwalitee](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-0.5.3.svg)](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-0.5.3)
 
 **! ATTENTION !**
 

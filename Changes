@@ -1,5 +1,9 @@
 Revision history for Perl extension Ithumb::XS.
 
+v0.5.3 2020-07-04
+    - Project is closed!
+    - Fixed README*
+
 v0.5.2 2020-03-01
     - Fixed README*
     - Fixed Cpants Kwalitee issues

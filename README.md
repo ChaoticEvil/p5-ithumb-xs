@@ -5,6 +5,15 @@
 [![CPAN version](https://badge.fury.io/pl/Ithumb-XS.svg)](https://badge.fury.io/pl/Ithumb-XS)
 [![Cpants Kwalitee](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-0.5.2.svg)](https://cpants.cpanauthors.org/release/BRDUCH/Ithumb-XS-0.5.2)
 
+**! ATTENTION !**
+
+The project was started for educational purposes (for learning Perl C API).
+At this moment I haven't reasons for continued development.
+There are more suitable solutions for creation of image thumbnails.
+I close a project. Thanks all.
+
+---
+
 Ithumb::XS - is a small (one function), simple and fast Perl-XS module
 for creation a thumbnails (with resizing and cropping), using Imlib2 library.
 
